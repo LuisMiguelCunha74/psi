@@ -14,7 +14,7 @@ class autor extends Model
     protected $table = "autores";
     
     public function livros(){
-        return $this->hasMany('App\Models\livro', 'id_autor');
+        return $this->hasMany('App\Models\Livro', 'id_autor');
     }
         
 }
