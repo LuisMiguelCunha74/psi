@@ -9,7 +9,7 @@ class editora extends Model
 {
     use HasFactory;
     
-    protected $primaryKey = "ide";
+    protected $primaryKey = "id_editora";
     
     protected $table = "editoras";
 }

@@ -24,3 +24,7 @@ Route::get('/editora', 'App\Http\Controllers\EditoraController@index')->name('ed
 Route::get('/genero', 'App\Http\Controllers\generoController@index')->name('genero.index');
 
 Route::get('/livros/{id}/show', 'App\Http\Controllers\LivrosController@show')->name('livros.show');
+
+Route::get('/genero/{id}/show', 'App\Http\Controllers\generoController@show')->name('genero.show');
+
+Route::get('/autor/{id}/show', 'App\Http\Controllers\AutoresController@show')->name('autor.show');

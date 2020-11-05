@@ -9,7 +9,12 @@ class autor extends Model
 {
     use HasFactory;
     
-    protected $primaryKey = "ida";
+    protected $primaryKey = "id_autor";
     
     protected $table = "autores";
+    
+    public function livros(){
+        return $this->hasMany('App\Models\livro', 'id_autor');
+    }
+        
 }
