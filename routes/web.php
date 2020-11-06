@@ -28,3 +28,5 @@ Route::get('/livros/{id}/show', 'App\Http\Controllers\LivrosController@show')->n
 Route::get('/genero/{id}/show', 'App\Http\Controllers\generoController@show')->name('genero.show');
 
 Route::get('/autor/{id}/show', 'App\Http\Controllers\AutoresController@show')->name('autor.show');
+
+Route::get('/editora/{id}/show', 'App\Http\Controllers\EditoraController@show')->name('editoras.show');

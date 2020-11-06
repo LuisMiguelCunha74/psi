@@ -1,6 +1,8 @@
 <ul>
 @foreach($autores as $autor)
-<li>{{$autor->nome}}</li>
+<a href="{{route('autor.show', ['id'=>$autor->id_autor])}}">
+    <li>{{$autor->nome}}</li>
+</a>
 @endforeach
 {{$autores->render()}}
 </ul>

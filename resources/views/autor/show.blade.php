@@ -1,9 +1,9 @@
-ID:{{$autor->id_autor}}<br>
-Titulo:{{$autor->nome}}<br>
-Idioma:{{$autor->nacionalidade}}
-@if(count($autor->livros))
-@foreach($autor->$livros as $livro)
-<h3>livro->titulo</h3>
+ID:{{$autores->id_autor}}<br>
+Titulo:{{$autores->nome}}<br>
+Idioma:{{$autores->nacionalidade}}
+@if(count($autores->livros))
+@foreach($autores->livros as $livro)
+<h3>{{$livro->titulo}}</h3>
 @endforeach
 @else
 <div class="alert alert-danger" role="alert">

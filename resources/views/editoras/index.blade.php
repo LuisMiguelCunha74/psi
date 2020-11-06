@@ -1,5 +1,8 @@
 <ul>
 @foreach($editoras as $editora)
-<li>{{$editora->nome}}</li>
+<a href="{{route('editora.show', ['id'=>$editora->id_editora])}}">
+    <li>{{$editora->nome}}</li>
+</a>
 @endforeach
 </ul>
+{{$editoras->render()}}

@@ -13,8 +13,17 @@ class autor extends Model
     
     protected $table = "autores";
     
+    //public function livros(){
+   //  return $this->hasMany('App\Models\Livro', 'id_autor');
+  //}
+    
+    
     public function livros(){
-        return $this->hasMany('App\Models\Livro', 'id_autor');
-    }
-        
+        return $this->belongsToMany(
+            'App\Models\livro',
+            'autores_livros',
+            'id_livro',
+            'id_autor'
+        )->withTimestamps();
+    }    
 }

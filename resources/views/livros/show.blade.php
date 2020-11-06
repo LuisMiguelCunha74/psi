@@ -8,3 +8,14 @@ genero:{{$livro->genero->designacao}}
 sem genero definido
 </div>
 @endif
+
+
+@if(count($livro->autores)>0)
+@foreach($livro->autores as $autor)
+{{$autor->nome}}<br>
+@endforeach
+@else
+    <div class="alert alert-danger" role="alert">
+        sem o nome do autor defenido
+    </div>
+@endif
